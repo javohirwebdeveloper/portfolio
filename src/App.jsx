@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import AnimatedBackground from "./components/AnimatedBackground"; // ⬅️ import qiling
 
 import { motion } from "framer-motion";
 import { Button } from "./components/Button";
@@ -13,25 +14,36 @@ export default function App() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-950 via-black to-gray-900 text-white font-sans">
-      <section className="text-center py-24 px-4">
+   <main className="min-h-screen bg-gradient-to-b from-gray-950  via-black to-gray-900 text-white font-sans">
+  <AnimatedBackground /> <div className="flex relative z-10 justify-center md:gap-6 gap-4 pt-5">
+          <a href="mailto:jumaboyevjavohir07@gmail.com" className="flex md:gap-2 gap-1 md:text-base text-xs items-center text-indigo-400 hover:underline">
+            <span className="max-md:hidden"><Mail size={20} /></span><span className="md:hidden"><Mail size={14} /></span> jumaboyevjavohir07@gmail.com
+          </a>
+          <a href="https://github.com/javohirwebdeveloper" target="_blank" className="flex md:text-base text-xs md:gap-2 gap-1 items-center text-white hover:underline">
+            <span className="max-md:hidden"><Github size={20} /></span><span className="md:hidden"><Github size={14} /></span> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/javohir-jumaboyev-3a2a36308/" target="_blank" className="flex md:text-base text-xs md:gap-2 gap-1 items-center text-blue-400 hover:underline">
+            <span className="max-md:hidden"><Linkedin size={20} /></span><span className="md:hidden"><Linkedin size={14} /></span> LinkedIn
+          </a>
+        </div><section className="text-center relative z-10  py-24 px-4">
+        
         <motion.h1
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-6xl font-black leading-tight"
+          className="text-6xl   font-black leading-tight flex flex-col items-center"
         >
-          Pixel-Perfect Interfaces, <span className="text-indigo-500">Purposefully Engineered</span>
+          <span>Pixel-Perfect Interfaces,</span> <span className="text-indigo-500">Purposefully Engineered</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-xl text-gray-400 max-w-2xl mx-auto mt-6"
+          className="text-xl  text-gray-400 max-w-2xl mx-auto mt-6"
         >
-          I build emotionally captivating, performance-driven web experiences with React, Firebase, and pure obsession for detail. Let's redefine user experience, one pixel at a time.
+          I'm <strong>Javoxir Jumabayev</strong>, you can call me <strong>Javoxir</strong>. I build emotionally captivating, performance-driven web experiences with React, Firebase, and pure obsession for detail. Let's redefine user experience, one pixel at a time.
         </motion.p>
-        <div className="mt-10 flex flex-wrap justify-center gap-4">
+        <div className="mt-10  flex flex-wrap justify-center gap-4">
         <Button
             onClick={scrollToProjects}
             className="bg-indigo-600 hover:bg-indigo-500 rounded-full px-6 py-3 text-lg shadow-md"
@@ -45,7 +57,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="py-20 max-w-4xl mx-auto px-4">
+      <section className="py-20 relative z-10 max-w-4xl mx-auto px-4">
         <motion.h2
           className="text-4xl font-bold text-center mb-10"
           initial={{ opacity: 0 }}
@@ -80,7 +92,7 @@ export default function App() {
         </motion.div>
       </section>
 
-      <section ref={projectsRef} className="py-20 max-w-6xl mx-auto px-4">
+      <section ref={projectsRef} className="py-20 relative z-10 max-w-6xl mx-auto px-4">
         <motion.h2
           className="text-4xl font-bold text-center mb-12"
           initial={{ opacity: 0 }}
@@ -123,20 +135,20 @@ export default function App() {
         </div>
       </section>
 
-      <section className="bg-black py-20 px-4 mt-20">
+      <section className="bg-black relative z-10 py-20 px-4 mt-20">
         <h2 className="text-3xl text-center font-bold mb-8">Let’s Work Together</h2>
         <p className="text-center text-gray-400 max-w-xl mx-auto mb-6">
           I’m actively looking for front-end internships and junior roles. Whether you represent a top-tier company or an ambitious startup, I’m ready to join, contribute, and grow. Let’s talk!
         </p>
-        <div className="flex justify-center gap-6 mb-10">
-          <a href="mailto:email@example.com" className="flex gap-2 items-center text-indigo-400 hover:underline">
-            <Mail size={20} /> email@example.com
+        <div className="flex relative z-10 justify-center md:gap-6 gap-4 pt-5">
+          <a href="mailto:jumaboyevjavohir07@gmail.com" className="flex md:gap-2 gap-1 md:text-base text-xs items-center text-indigo-400 hover:underline">
+            <span className="max-md:hidden"><Mail size={20} /></span><span className="md:hidden"><Mail size={14} /></span> jumaboyevjavohir07@gmail.com
           </a>
-          <a href="https://github.com/username" target="_blank" className="flex gap-2 items-center text-white hover:underline">
-            <Github size={20} /> GitHub
+          <a href="https://github.com/javohirwebdeveloper" target="_blank" className="flex md:text-base text-xs md:gap-2 gap-1 items-center text-white hover:underline">
+            <span className="max-md:hidden"><Github size={20} /></span><span className="md:hidden"><Github size={14} /></span> GitHub
           </a>
-          <a href="https://linkedin.com/in/username" target="_blank" className="flex gap-2 items-center text-blue-400 hover:underline">
-            <Linkedin size={20} /> LinkedIn
+          <a href="https://www.linkedin.com/in/javohir-jumaboyev-3a2a36308/" target="_blank" className="flex md:text-base text-xs md:gap-2 gap-1 items-center text-blue-400 hover:underline">
+            <span className="max-md:hidden"><Linkedin size={20} /></span><span className="md:hidden"><Linkedin size={14} /></span> LinkedIn
           </a>
         </div>
       </section>
