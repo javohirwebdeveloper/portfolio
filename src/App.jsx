@@ -15,9 +15,9 @@ export default function App() {
 
   return (
    <main className="min-h-screen bg-gradient-to-b from-gray-950  via-black to-gray-900 text-white font-sans">
-  <AnimatedBackground /> <div className="flex relative z-10 justify-center md:gap-6 gap-4 pt-5">
+  <AnimatedBackground /> <div className="flex relative bg-black items-center h-10 z-10 justify-center md:gap-6 gap-4">
           <a href="mailto:jumaboyevjavohir07@gmail.com" className="flex md:gap-2 gap-1 md:text-base text-xs items-center text-indigo-400 hover:underline">
-            <span className="max-md:hidden"><Mail size={20} /></span><span className="md:hidden"><Mail size={14} /></span> jumaboyevjavohir07@gmail.com
+            <span className="max-md:hidden"><Mail size={20} /></span><span className="md:hidden"><Mail size={14} /></span> Email
           </a>
           <a href="https://github.com/javohirwebdeveloper" target="_blank" className="flex md:text-base text-xs md:gap-2 gap-1 items-center text-white hover:underline">
             <span className="max-md:hidden"><Github size={20} /></span><span className="md:hidden"><Github size={14} /></span> GitHub
@@ -41,7 +41,7 @@ export default function App() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-xl  text-gray-400 max-w-2xl mx-auto mt-6"
         >
-          I'm <strong>Javoxir Jumabayev</strong>, you can call me <strong>Javoxir</strong>. I build emotionally captivating, performance-driven web experiences with React, Firebase, and pure obsession for detail. Let's redefine user experience, one pixel at a time.
+          I'm <strong>Javoxir Jumabayev</strong>, you can call me <strong className="text-gray-200">Javoxir</strong>. I build emotionally captivating, performance-driven web experiences with React, Firebase, and pure obsession for detail. Let's redefine user experience, one pixel at a time. I’m even ready to work <strong className="text-gray-200">without salary</strong>, just to get real experience and improve my skills
         </motion.p>
         <div className="mt-10  flex flex-wrap justify-center gap-4">
         <Button
@@ -142,7 +142,7 @@ export default function App() {
         </p>
         <div className="flex relative z-10 justify-center md:gap-6 gap-4 pt-5">
           <a href="mailto:jumaboyevjavohir07@gmail.com" className="flex md:gap-2 gap-1 md:text-base text-xs items-center text-indigo-400 hover:underline">
-            <span className="max-md:hidden"><Mail size={20} /></span><span className="md:hidden"><Mail size={14} /></span> jumaboyevjavohir07@gmail.com
+            <span className="max-md:hidden"><Mail size={20} /></span><span className="md:hidden"><Mail size={14} /></span> Email
           </a>
           <a href="https://github.com/javohirwebdeveloper" target="_blank" className="flex md:text-base text-xs md:gap-2 gap-1 items-center text-white hover:underline">
             <span className="max-md:hidden"><Github size={20} /></span><span className="md:hidden"><Github size={14} /></span> GitHub
