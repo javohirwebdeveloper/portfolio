@@ -31,7 +31,8 @@ export default function App() {
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-6xl   font-black leading-tight flex flex-col items-center"
+          style={{ lineHeight: 1.1}}
+          className="md:text-6xl text-5xl font-black leading-tight flex flex-col items-center"
         >
           <span>Pixel-Perfect Interfaces,</span> <span className="text-indigo-500">Purposefully Engineered</span>
         </motion.h1>
