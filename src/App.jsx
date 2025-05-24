@@ -78,7 +78,7 @@ export default function App() {
             I'm a passionate front-end developer based in Tashkent with a sharp eye for design and a deep respect for user experience. I started coding as a high school student and quickly fell in love with creating intuitive, fast, and visually powerful web interfaces.
           </p>
           <p>
-            I specialize in building full-scale user interfaces with React, integrating Firebase for scalable real-time solutions, and crafting pixel-perfect responsive designs using Tailwind CSS. I believe that every element on a webpage must have a reason to exist — I don’t code to fill space, I code to tell a story.
+            I specialize in building full-scale user interfaces with React, integrating Firebase for scalable real-time solutions, and crafting pixel-perfect responsive designs using Tailwind CSS.
           </p>
           <p>
             My code is clean, my mindset is growth-oriented, and my goal is clear: contribute meaningfully to professional products while constantly leveling up my craft.
