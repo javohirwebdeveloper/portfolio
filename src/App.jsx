@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
 import AnimatedBackground from "./components/AnimatedBackground"; // ⬅️ import qiling
-
+import { IconBrandTelegram } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { Button } from "./components/Button";
 import { Github, ExternalLink, Mail, Linkedin } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 
 
 export default function App() {
@@ -104,76 +105,117 @@ export default function App() {
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-10">
-          <ProjectCard
-            title="UnumMarket.uz"
-            desc="A complete e-commerce front built with React and Firebase. Includes cart logic, order placement, real-time updates, and mobile-first responsiveness."
-            tech="React, Firebase, Tailwind, Vite"
-            github="https://github.com/yourusername/unummarket"
-            live="https://unummarket.uz"
-          />
+        <ProjectCard
+  title="GMT Health"
+  desc="Responsive landing page for a company that sells medical equipment and transport vehicles for clinics and hospitals. Clean layout, professional design focus."
+  tech="React, Tailwind CSS"
+  github="https://github.com/yourusername/gmthealth"
+  live="https://gmthealth.example.com"
+  image="/images/notivo.png"
+/>
+<ProjectCard
+  title="Notivo — IELTS Essay AI Checker"
+  desc="Frontend interface for an AI-powered IELTS essay evaluator. Features include dynamic essay analysis, smooth UX, and reliable API calls."
+  tech="React, Tailwind CSS, REST API"
+  github="https://github.com/yourusername/notivo-ai"
+  live="https://notivoai.example.com"
+  image="/images/notivo.png"
+/>
 
-          <ProjectCard
-            title="WeatherNow"
-            desc="Progressive Web App for weather updates, installable on any device with offline-first capabilities and lazy-loaded data calls."
-            tech="React, PWA, Service Workers, OpenWeather API"
-            github="https://github.com/yourusername/weathernow"
-          />
+<ProjectCard
+  title="iPhone 15 Landing Page Clone"
+  desc="Pixel-perfect clone of Apple's iPhone 15 product page. Built with Vite, Tailwind, and React. ESLint enforced code quality and mobile-first layout."
+  tech="React, Tailwind CSS, Vite, ESLint"
+  github="https://github.com/yourusername/iphone15-clone"
+  live="https://iphone15-clone.example.com"
+  image="/images/notivo.png"
+/>
+<ProjectCard
+  title="Green Shop"
+  desc="Modern online store with a product catalog, filtering logic, and cart system. Built with component-based architecture and responsive design."
+  tech="React, Tailwind CSS"
+  github="https://github.com/yourusername/greenshop"
+  live="https://greenshop.example.com"
+  image="/images/notivo.png"
+/>
 
-          <ProjectCard
-            title="TaskRanger"
-            desc="Modern Kanban board with drag-and-drop, persistent localStorage sync, and atomic Zustand state management."
-            tech="React, Zustand, DnD Kit"
-            github="https://github.com/yourusername/taskranger"
-          />
-
-          <ProjectCard
-            title="My Portfolio"
-            desc="The very site you're browsing now. Responsive, animated, and built with soul."
-            tech="React, Tailwind, Framer Motion, Vercel"
-            github="https://github.com/yourusername/portfolio"
-            live="https://portfolio.site"
-          />
+<ProjectCard
+  title="UIC Group Clone"
+  desc="Corporate website clone of UIC Group. Responsive grid layout, optimized assets, and modular components for reusability."
+  tech="React, Tailwind CSS"
+  github="https://github.com/yourusername/uicgroup-clone"
+  live="https://uicgroup-clone.example.com"
+  image="/images/notivo.png"
+/>
         </div>
       </section>
+      <section className="relative z-10 py-10 px-4 bg-black text-center border-b border-gray-800">
+  <motion.h2
+    className="text-3xl font-bold text-white mb-6"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+  >
+    Get in Touch
+  </motion.h2>
+  <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
+  I’m actively looking for front-end internships and junior roles. Whether you represent a top-tier company or an ambitious startup, I’m ready to join, contribute, and grow. Let’s talk!
+  </p>
+  <div className="flex flex-wrap justify-center md:gap-6 gap-4 md:text-base text-xs">
+    <a href="mailto:jumaboyevjavohir07@gmail.com" className="flex items-center md:gap-2 gap-1 text-indigo-400 hover:underline">
+    <span className="max-md:hidden"><Mail size={20} /></span><span className="md:hidden"><Mail size={14} /></span> Email
+    </a>
+    <a href="tel:+998335159977" className="flex items-center md:gap-2 gap-1 text-green-400 hover:underline">
+    <span className="max-md:hidden"><PhoneCall size={20}/></span><span className="md:hidden"><PhoneCall size={14}/></span> Phone
+     Phone
+    </a>
+    <a href="https://t.me/javohirwebdev" target="_blank" rel="noopener noreferrer" className="flex items-center md:gap-2 gap-1 text-blue-400 hover:underline">
+    <span className="max-md:hidden"><IconBrandTelegram size={20} /></span><span className="md:hidden"><IconBrandTelegram size={14} /></span> @javohir_fd
+     
+    </a>
+    <a href="https://www.linkedin.com/in/javohir-jumaboyev-3a2a36308/" target="_blank" className="flex items-center md:gap-2 gap-1 text-blue-300 hover:underline">
+    <span className="max-md:hidden"><Linkedin size={20} /></span><span className="md:hidden"><Linkedin size={14} /></span> LinkedIn
+    </a>
+  </div>
+</section>
 
-      <section className="bg-black relative z-10 py-20 px-4 mt-20">
-        <h2 className="text-3xl text-center font-bold mb-8">Let’s Work Together</h2>
-        <p className="text-center text-gray-400 max-w-xl mx-auto mb-6">
-          I’m actively looking for front-end internships and junior roles. Whether you represent a top-tier company or an ambitious startup, I’m ready to join, contribute, and grow. Let’s talk!
-        </p>
-        <div className="flex relative z-10 justify-center md:gap-6 gap-4 pt-5">
-          <a href="mailto:jumaboyevjavohir07@gmail.com" className="flex md:gap-2 gap-1 md:text-base text-xs items-center text-indigo-400 hover:underline">
-            <span className="max-md:hidden"><Mail size={20} /></span><span className="md:hidden"><Mail size={14} /></span> Email
-          </a>
-          <a href="https://github.com/javohirwebdeveloper" target="_blank" className="flex md:text-base text-xs md:gap-2 gap-1 items-center text-white hover:underline">
-            <span className="max-md:hidden"><Github size={20} /></span><span className="md:hidden"><Github size={14} /></span> GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/javohir-jumaboyev-3a2a36308/" target="_blank" className="flex md:text-base text-xs md:gap-2 gap-1 items-center text-blue-400 hover:underline">
-            <span className="max-md:hidden"><Linkedin size={20} /></span><span className="md:hidden"><Linkedin size={14} /></span> LinkedIn
-          </a>
-        </div>
-      </section>
     </main>
   );
 }
-
-function ProjectCard({ title, desc, tech, github, live }) {
+function ProjectCard({ title, desc, tech, github, live, image }) {
   return (
     <motion.div
       className="bg-gray-900 p-6 rounded-2xl shadow-md border border-gray-700 hover:shadow-xl transition duration-300"
       whileHover={{ scale: 1.02 }}
     >
+      {image && (
+        <img
+          src={image}
+          alt={`${title} preview`}
+          className="w-full h-48 object-cover rounded-xl mb-4 border border-gray-800"
+        />
+      )}
       <h3 className="text-2xl font-semibold mb-2 text-white">{title}</h3>
       <p className="text-gray-400 mb-2">{desc}</p>
       <p className="text-sm text-gray-500 mb-4 italic">Tech Stack: {tech}</p>
       <div className="flex flex-wrap gap-4">
         {github && (
-          <a href={github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-blue-400 hover:underline">
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-blue-400 hover:underline"
+          >
             <Github size={18} /> GitHub
           </a>
         )}
         {live && (
-          <a href={live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-green-400 hover:underline">
+          <a
+            href={live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-green-400 hover:underline"
+          >
             <ExternalLink size={18} /> Live Site
           </a>
         )}
