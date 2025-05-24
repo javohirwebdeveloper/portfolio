@@ -53,7 +53,7 @@ export default function App() {
             View My Work
           </Button>
 
-          <a href="/resume.pdf" download>
+          <a href="/Javoxir Rezume.pdf" download>
             <Button variant="outline" className="rounded-full px-6 py-3 text-lg border-gray-600 text-gray-300 hover:text-white">Download Resume</Button>
           </a>
         </div>
@@ -106,46 +106,54 @@ export default function App() {
 
         <div className="grid md:grid-cols-2 gap-10">
         <ProjectCard
+  title="UnumMarket.uz"
+  desc="Only for mobile. A complete e-commerce front built with React and Firebase. Includes cart logic, order placement, real-time updates, and mobile-first responsiveness."
+  tech="React, Firebase, Tailwind, Vite"
+  github="https://github.com/javohirwebdeveloper/UNUM/"
+  live="https://unummarket.uz/"
+  image="/unum.jpg"
+/>
+        <ProjectCard
   title="GMT Health"
   desc="Responsive landing page for a company that sells medical equipment and transport vehicles for clinics and hospitals. Clean layout, professional design focus."
   tech="React, Tailwind CSS"
-  github="https://github.com/yourusername/gmthealth"
-  live="https://gmthealth.example.com"
-  image="/images/notivo.png"
+  github="https://github.com/javohirwebdeveloper/global-mt"
+  live="https://global-mt.vercel.app/"
+  image="/gmt.png"
 />
 <ProjectCard
   title="Notivo — IELTS Essay AI Checker"
   desc="Frontend interface for an AI-powered IELTS essay evaluator. Features include dynamic essay analysis, smooth UX, and reliable API calls."
   tech="React, Tailwind CSS, REST API"
-  github="https://github.com/yourusername/notivo-ai"
-  live="https://notivoai.example.com"
-  image="/images/notivo.png"
+  github="https://github.com/javohirwebdeveloper/writing"
+  live="https://notivo.vercel.app/"
+  image="/notivo.png"
 />
 
 <ProjectCard
   title="iPhone 15 Landing Page Clone"
   desc="Pixel-perfect clone of Apple's iPhone 15 product page. Built with Vite, Tailwind, and React. ESLint enforced code quality and mobile-first layout."
   tech="React, Tailwind CSS, Vite, ESLint"
-  github="https://github.com/yourusername/iphone15-clone"
-  live="https://iphone15-clone.example.com"
-  image="/images/notivo.png"
+  github="https://github.com/javohirwebdeveloper/apple-clone-main"
+  live="http://apple-clone-by-javohir.vercel.app/"
+  image="/apple.png"
 />
 <ProjectCard
   title="Green Shop"
   desc="Modern online store with a product catalog, filtering logic, and cart system. Built with component-based architecture and responsive design."
   tech="React, Tailwind CSS"
-  github="https://github.com/yourusername/greenshop"
-  live="https://greenshop.example.com"
-  image="/images/notivo.png"
+  github="https://github.com/javohirwebdeveloper/7-oy-imtihon"
+  live="https://7-oy-imtihon.netlify.app/"
+  image="/greenshop.png"
 />
 
 <ProjectCard
   title="UIC Group Clone"
   desc="Corporate website clone of UIC Group. Responsive grid layout, optimized assets, and modular components for reusability."
   tech="React, Tailwind CSS"
-  github="https://github.com/yourusername/uicgroup-clone"
-  live="https://uicgroup-clone.example.com"
-  image="/images/notivo.png"
+  github="https://github.com/javohirwebdeveloper/4-DARS"
+  live="https://4-dars-two.vercel.app/"
+  image="/uic.png"
 />
         </div>
       </section>
@@ -169,7 +177,7 @@ export default function App() {
     <span className="max-md:hidden"><PhoneCall size={20}/></span><span className="md:hidden"><PhoneCall size={14}/></span> Phone
      Phone
     </a>
-    <a href="https://t.me/javohirwebdev" target="_blank" rel="noopener noreferrer" className="flex items-center md:gap-2 gap-1 text-blue-400 hover:underline">
+    <a href="https://t.me/javohir_fd" target="_blank" rel="noopener noreferrer" className="flex items-center md:gap-2 gap-1 text-blue-400 hover:underline">
     <span className="max-md:hidden"><IconBrandTelegram size={20} /></span><span className="md:hidden"><IconBrandTelegram size={14} /></span> @javohir_fd
      
     </a>
