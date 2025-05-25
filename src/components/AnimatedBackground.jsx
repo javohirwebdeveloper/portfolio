@@ -16,7 +16,7 @@ export default function AnimatedBackground() {
 
     window.addEventListener("resize", resize);
 
-    const particles = Array.from({ length: 60 }, () => ({
+    const particles = Array.from({ length: 100 }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
       vx: (Math.random() - 0.5) * 1.2, // Faster
